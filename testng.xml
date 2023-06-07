@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="interbankingv2">
+
+<listeners>
+<listener class-name="com.interbanking.utilities.Reporting">
+
+</listener>
+
+</listeners>
+<test name="BankingApp Test">
+
+<parameter name="browser" value="chrome"/>
+
+<classes>
+
+<class name="com.interbanking.testcases.TC_LoginTest001"/> 
+<class name="com.interbanking.testcases.TC_AddNewCustomer_002"/>
+
+
+</classes>
+
+</test>
+
+
+</suite>
